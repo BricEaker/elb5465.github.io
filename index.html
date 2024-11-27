@@ -80,12 +80,18 @@
 					</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Eric Baker</li><li>2022</li>
-						</ul>
-					</footer>
-
+				<footer id="footer">
+				  <ul class="copyright">
+				    <li>&copy; Eric Baker</li>
+				    <li id="current-year"></li>
+				  </ul>
+				</footer>
+				
+				<script>
+				  // Get the current year dynamically
+				  const currentYear = new Date().getFullYear();
+				  document.getElementById('current-year').textContent = currentYear;
+				</script>
 			</div>
 
 		<!-- Scripts -->
